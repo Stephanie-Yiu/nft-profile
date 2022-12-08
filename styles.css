@@ -1,0 +1,190 @@
+
+
+  :root{
+    --card-background:rgba(21,39,63,255);
+  --header-color:#f1f8fd;
+  --inText-color:#69819d;
+  --price-color:#39d0d7;
+  --date-color:#92aace;
+  }
+  *{
+    box-sizing: content-box;
+  }
+  body{
+    justify-content: center;
+    background-color: rgba(13,26,45,255);
+  }
+
+
+.card {
+justify-items: center;
+justify-content: center;
+  background-color:var(--card-background) ;
+  max-width: 300px;
+  max-height: 900px;
+
+  padding: 3%;
+  margin: 20% auto;
+  border-radius: 3%;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.381);
+}
+p{
+  font-size: 20px;
+
+
+}
+
+.art-container{
+  position: relative;
+}
+.art-image{
+ width: 100%;
+  height: auto;
+  object-fit: contain;
+margin: 0 auto;
+border-radius: 3%;
+display: block;
+}
+.overlay {
+  border-radius: 3%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.7s ease;
+  background-color: var(--price-color);
+  cursor: pointer;
+}
+
+.view-icon{
+  position: absolute;
+  top:41%;
+  left: 44%;
+  right: auto;
+  bottom: auto;
+}
+.overlay:hover{
+
+opacity: 0.5;
+}
+
+
+
+
+
+.NFT-name{
+  display: block;
+  color: var(--header-color);
+  transition: 0.7s ease;
+}
+.NFT-name:hover{
+  color: var(--price-color);
+  cursor: pointer;
+}
+
+.card-text{
+ line-height: 200%;
+  color: var(--inText-color);
+  font-weight: lighter;
+  font-size: larger;
+  display: block;
+}
+.part-4{
+  display:inline-flex;
+  margin:auto auto;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.part-4-icon {
+  margin: auto auto;
+  display: inline-flex;
+
+
+}
+
+
+.price{
+
+color: var(--price-color);
+ display: flex;
+align-items: flex-start;
+justify-content: center;
+font-weight: bold;
+letter-spacing: 0.5px;
+font-size: larger;
+
+}
+.price p{
+  margin-left: 10px;
+}
+
+.date{
+  color: var(--date-color);
+  display: flex;
+
+  align-items: flex-start;
+  vertical-align: middle;
+  font-size: larger;
+}
+
+.date p{
+  margin-left: 10px;
+}
+.underline{
+  background-color: #92aace4d;
+  width: 100%;
+  height: 1px;
+}
+
+.creator-box{
+  margin-top: 10px;
+  display: flex;
+  color: var(--date-color);
+  font-size: larger;
+
+}
+
+.icon-img{
+  
+  border-radius: 100%;
+  border: #f1f8fd solid 1px;
+height: 10%;
+  width: 10%;
+margin: 15.5px 15.5px  15.5px  0;
+
+}
+
+.person-name{
+  color:var(--header-color) ;
+  font-size: larger;
+  vertical-align: middle;
+ transition: 0.7s;
+}
+.person-name:hover{
+  cursor: pointer;
+  color: var(--price-color);
+}
+
+@media only screen and (max-width: 600px){
+  .card {
+    justify-items: center;
+    justify-content: center;
+      background-color:var(--card-background) ;
+      min-width: 80%;
+      min-height: 80%;
+      margin: 100px auto;
+      padding: 3%;
+      margin: 10% 10%;
+      border-radius: 3%;
+      box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.381);
+    }
+
+
+
+  }
